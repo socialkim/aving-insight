@@ -1,0 +1,1696 @@
+<!DOCTYPE html>
+<html lang="ko" data-theme="light">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>억겁의 기회 — AI 시대, CEO가 반드시 알아야 할 생존 전략</title>
+<meta name="description" content="AVING 김기대 회장의 강의 인사이트 정리. AI 시대 1000년에 한 번 올 기회, CEO가 놓쳐서는 안 될 핵심 전략.">
+<meta property="og:title" content="억겁의 기회 — AI 시대 CEO 생존 전략">
+<meta property="og:description" content="AVING 김기대 회장 강의 인사이트. 1000년에 한 번 올 AI 혁명의 기회를 잡아라.">
+<meta property="og:type" content="article">
+<meta property="og:image" content="https://placeholder.com/og-image.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700;900&family=Playfair+Display:ital,wght@0,700;0,900;1,700&display=swap" rel="stylesheet">
+<style>
+/* ============ CSS VARIABLES ============ */
+:root {
+  --primary: #FF6B9D;
+  --secondary: #C44569;
+  --accent: #FFB8D0;
+  --light-bg: #FFF5F7;
+  --dark-plum: #2D1B2E;
+  --gradient: linear-gradient(135deg, #FF6B9D, #FF8E53);
+  --gradient-reverse: linear-gradient(135deg, #FF8E53, #FF6B9D);
+  --text-dark: #2D1B2E;
+  --text-light: #FFF5F7;
+  --glass-bg: rgba(255, 255, 255, 0.15);
+  --glass-border: rgba(255, 255, 255, 0.25);
+  --glass-card-bg: rgba(255, 245, 247, 0.7);
+  --glass-card-border: rgba(255, 107, 157, 0.2);
+  --card-shadow: 0 8px 32px rgba(196, 69, 105, 0.1);
+  --body-bg: #FFF5F7;
+  --section-alt-bg: #FFFFFF;
+  --nav-bg: rgba(255, 245, 247, 0.8);
+  --timeline-line: #FFB8D0;
+  --quote-bg: #FFFFFF;
+  --checkbox-bg: #FFFFFF;
+  --footer-bg: #2D1B2E;
+  --counter-text: #2D1B2E;
+  --action-card-bg: rgba(255, 245, 247, 0.8);
+  --bento-card-bg: rgba(255, 255, 255, 0.7);
+}
+
+[data-theme="dark"] {
+  --light-bg: #1a1020;
+  --dark-plum: #FFF5F7;
+  --text-dark: #F5E6EA;
+  --text-light: #FFF5F7;
+  --glass-card-bg: rgba(45, 27, 46, 0.7);
+  --glass-card-border: rgba(255, 107, 157, 0.3);
+  --card-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+  --body-bg: #120a14;
+  --section-alt-bg: #1a1020;
+  --nav-bg: rgba(18, 10, 20, 0.85);
+  --timeline-line: #C44569;
+  --quote-bg: #1a1020;
+  --checkbox-bg: #1a1020;
+  --footer-bg: #0a0510;
+  --counter-text: #FFF5F7;
+  --action-card-bg: rgba(45, 27, 46, 0.6);
+  --bento-card-bg: rgba(45, 27, 46, 0.6);
+}
+
+/* ============ RESET & BASE ============ */
+*, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+
+html {
+  scroll-behavior: smooth;
+  font-size: 16px;
+}
+
+body {
+  font-family: 'Noto Sans KR', -apple-system, BlinkMacSystemFont, sans-serif;
+  color: var(--text-dark);
+  background: var(--body-bg);
+  line-height: 1.7;
+  overflow-x: hidden;
+  transition: background 0.4s ease, color 0.4s ease;
+}
+
+/* ============ SCROLL PROGRESS ============ */
+.scroll-progress {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 0%;
+  height: 3px;
+  background: var(--gradient);
+  z-index: 10000;
+  transition: width 0.1s linear;
+}
+
+/* ============ CHERRY BLOSSOM PETALS ============ */
+.petals-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 9998;
+  overflow: hidden;
+}
+
+.petal {
+  position: absolute;
+  top: -40px;
+  width: 12px;
+  height: 12px;
+  background: radial-gradient(ellipse at center, #FFB8D0 0%, #FF6B9D 60%, transparent 70%);
+  border-radius: 50% 0 50% 50%;
+  opacity: 0.5;
+  animation: petalFall linear infinite;
+}
+
+.petal:nth-child(1) { left: 5%; animation-duration: 12s; animation-delay: 0s; width: 10px; height: 10px; opacity: 0.4; }
+.petal:nth-child(2) { left: 15%; animation-duration: 15s; animation-delay: 2s; width: 14px; height: 14px; opacity: 0.35; }
+.petal:nth-child(3) { left: 28%; animation-duration: 11s; animation-delay: 4s; width: 8px; height: 8px; opacity: 0.5; }
+.petal:nth-child(4) { left: 42%; animation-duration: 14s; animation-delay: 1s; width: 11px; height: 11px; opacity: 0.3; }
+.petal:nth-child(5) { left: 55%; animation-duration: 13s; animation-delay: 3s; width: 13px; height: 13px; opacity: 0.45; }
+.petal:nth-child(6) { left: 68%; animation-duration: 16s; animation-delay: 5s; width: 9px; height: 9px; opacity: 0.35; }
+.petal:nth-child(7) { left: 78%; animation-duration: 12s; animation-delay: 2.5s; width: 12px; height: 12px; opacity: 0.4; }
+.petal:nth-child(8) { left: 88%; animation-duration: 14s; animation-delay: 0.5s; width: 10px; height: 10px; opacity: 0.3; }
+.petal:nth-child(9) { left: 35%; animation-duration: 17s; animation-delay: 6s; width: 7px; height: 7px; opacity: 0.25; }
+.petal:nth-child(10) { left: 92%; animation-duration: 11s; animation-delay: 3.5s; width: 11px; height: 11px; opacity: 0.4; }
+.petal:nth-child(11) { left: 50%; animation-duration: 13s; animation-delay: 7s; width: 9px; height: 9px; opacity: 0.3; }
+.petal:nth-child(12) { left: 10%; animation-duration: 15s; animation-delay: 8s; width: 13px; height: 13px; opacity: 0.35; }
+
+@keyframes petalFall {
+  0% {
+    transform: translateY(0) rotate(0deg) translateX(0);
+    opacity: 0;
+  }
+  5% { opacity: 0.5; }
+  50% {
+    transform: translateY(50vh) rotate(180deg) translateX(80px);
+  }
+  90% { opacity: 0.3; }
+  100% {
+    transform: translateY(105vh) rotate(360deg) translateX(-40px);
+    opacity: 0;
+  }
+}
+
+/* ============ NAVIGATION ============ */
+.nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 9999;
+  background: var(--nav-bg);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border-bottom: 1px solid rgba(255, 107, 157, 0.1);
+  transition: background 0.4s ease, transform 0.3s ease;
+  transform: translateY(-100%);
+}
+
+.nav.visible { transform: translateY(0); }
+
+.nav-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0.8rem 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-logo {
+  font-weight: 700;
+  font-size: 1rem;
+  background: var(--gradient);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.nav-links {
+  display: flex;
+  gap: 1.5rem;
+  align-items: center;
+  list-style: none;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: var(--text-dark);
+  font-size: 0.85rem;
+  font-weight: 500;
+  transition: color 0.3s;
+  opacity: 0.7;
+}
+
+.nav-links a:hover { opacity: 1; color: var(--primary); }
+
+.theme-toggle {
+  background: none;
+  border: 2px solid var(--glass-card-border);
+  border-radius: 50%;
+  width: 36px;
+  height: 36px;
+  cursor: pointer;
+  font-size: 1.1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+  color: var(--text-dark);
+}
+
+.theme-toggle:hover {
+  background: var(--primary);
+  color: white;
+  border-color: var(--primary);
+  transform: rotate(30deg);
+}
+
+/* ============ HERO SECTION ============ */
+.hero {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  background: var(--body-bg);
+}
+
+.hero::before {
+  content: '';
+  position: absolute;
+  top: -50%;
+  right: -30%;
+  width: 80vw;
+  height: 80vw;
+  background: radial-gradient(circle, rgba(255,107,157,0.12) 0%, transparent 70%);
+  border-radius: 50%;
+  animation: heroGlow 8s ease-in-out infinite alternate;
+}
+
+.hero::after {
+  content: '';
+  position: absolute;
+  bottom: -40%;
+  left: -20%;
+  width: 60vw;
+  height: 60vw;
+  background: radial-gradient(circle, rgba(255,142,83,0.08) 0%, transparent 70%);
+  border-radius: 50%;
+  animation: heroGlow 10s ease-in-out infinite alternate-reverse;
+}
+
+@keyframes heroGlow {
+  0% { transform: scale(1) translate(0, 0); }
+  100% { transform: scale(1.1) translate(20px, -20px); }
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+  padding: 2rem;
+  max-width: 900px;
+}
+
+.hero-badge {
+  display: inline-block;
+  background: var(--gradient);
+  color: white;
+  padding: 0.4rem 1.2rem;
+  border-radius: 50px;
+  font-size: 0.8rem;
+  font-weight: 500;
+  letter-spacing: 0.05em;
+  margin-bottom: 2rem;
+  animation: fadeInUp 1s ease 0.2s both;
+}
+
+.hero-title {
+  font-family: 'Playfair Display', 'Noto Sans KR', serif;
+  font-size: clamp(3rem, 8vw, 7rem);
+  font-weight: 900;
+  line-height: 1.1;
+  margin-bottom: 1.5rem;
+  background: var(--gradient);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  background-size: 200% 200%;
+  animation: gradientShift 4s ease infinite, fadeInUp 1s ease 0.4s both;
+}
+
+@keyframes gradientShift {
+  0%, 100% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+}
+
+.hero-subtitle {
+  font-size: clamp(1.1rem, 2.5vw, 1.6rem);
+  font-weight: 300;
+  color: var(--text-dark);
+  opacity: 0.8;
+  margin-bottom: 2rem;
+  animation: fadeInUp 1s ease 0.6s both;
+}
+
+.hero-meta {
+  font-size: 0.9rem;
+  color: var(--text-dark);
+  opacity: 0.5;
+  animation: fadeInUp 1s ease 0.8s both;
+}
+
+.hero-meta span { margin: 0 0.5rem; }
+
+.scroll-indicator {
+  position: absolute;
+  bottom: 2rem;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 2;
+  animation: bounce 2s ease infinite;
+  cursor: pointer;
+}
+
+.scroll-indicator svg {
+  width: 28px;
+  height: 28px;
+  stroke: var(--primary);
+  stroke-width: 2;
+  fill: none;
+}
+
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% { transform: translateX(-50%) translateY(0); }
+  40% { transform: translateX(-50%) translateY(-12px); }
+  60% { transform: translateX(-50%) translateY(-6px); }
+}
+
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(30px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* ============ SECTION COMMON ============ */
+.section {
+  padding: 5rem 1.5rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.section-full {
+  padding: 5rem 1.5rem;
+}
+
+.section-title {
+  font-size: clamp(1.8rem, 4vw, 2.8rem);
+  font-weight: 900;
+  text-align: center;
+  margin-bottom: 1rem;
+  color: var(--text-dark);
+}
+
+.section-title .gradient-text {
+  background: var(--gradient);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.section-desc {
+  text-align: center;
+  font-size: 1.05rem;
+  color: var(--text-dark);
+  opacity: 0.65;
+  max-width: 700px;
+  margin: 0 auto 3rem;
+  line-height: 1.8;
+}
+
+/* Scroll animation */
+.reveal {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.reveal.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.reveal-delay-1 { transition-delay: 0.1s; }
+.reveal-delay-2 { transition-delay: 0.2s; }
+.reveal-delay-3 { transition-delay: 0.3s; }
+.reveal-delay-4 { transition-delay: 0.4s; }
+.reveal-delay-5 { transition-delay: 0.5s; }
+
+/* ============ CORE MESSAGE ============ */
+.core-message {
+  background: var(--section-alt-bg);
+  transition: background 0.4s ease;
+}
+
+.core-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.core-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.core-card {
+  background: var(--glass-card-bg);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid var(--glass-card-border);
+  border-radius: 20px;
+  padding: 2.5rem 2rem;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.core-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 16px 48px rgba(255, 107, 157, 0.15);
+}
+
+.core-card-icon {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.core-card h3 {
+  font-size: 1.15rem;
+  font-weight: 700;
+  margin-bottom: 0.8rem;
+  color: var(--secondary);
+}
+
+.core-card p {
+  font-size: 0.95rem;
+  opacity: 0.75;
+  line-height: 1.7;
+}
+
+/* ============ BENTO GRID ============ */
+.bento-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: auto auto;
+  gap: 1.5rem;
+}
+
+.bento-card {
+  background: var(--bento-card-bg);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid var(--glass-card-border);
+  border-radius: 24px;
+  padding: 2.5rem 2rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.bento-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: var(--gradient);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.bento-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 20px 60px rgba(255, 107, 157, 0.12);
+  border-color: var(--primary);
+}
+
+.bento-card:hover::before { opacity: 1; }
+
+.bento-large { grid-column: span 2; }
+.bento-medium { grid-column: span 2; }
+
+.bento-emoji {
+  font-size: 2.2rem;
+  margin-bottom: 1rem;
+  display: block;
+}
+
+.bento-card h3 {
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  color: var(--text-dark);
+  line-height: 1.4;
+}
+
+.bento-card ul {
+  list-style: none;
+  padding: 0;
+}
+
+.bento-card ul li {
+  font-size: 0.95rem;
+  line-height: 1.8;
+  opacity: 0.75;
+  padding-left: 1.2rem;
+  position: relative;
+}
+
+.bento-card ul li::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0.7em;
+  width: 6px;
+  height: 6px;
+  background: var(--primary);
+  border-radius: 50%;
+}
+
+/* ============ TIMELINE ============ */
+.timeline-section {
+  background: var(--section-alt-bg);
+  transition: background 0.4s ease;
+}
+
+.timeline {
+  position: relative;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2rem 0;
+}
+
+.timeline::before {
+  content: '';
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background: var(--timeline-line);
+}
+
+.timeline-item {
+  position: relative;
+  width: 50%;
+  padding: 1rem 2.5rem 2rem;
+}
+
+.timeline-item:nth-child(odd) {
+  left: 0;
+  text-align: right;
+  padding-right: 3rem;
+}
+
+.timeline-item:nth-child(even) {
+  left: 50%;
+  padding-left: 3rem;
+}
+
+.timeline-dot {
+  position: absolute;
+  top: 1.2rem;
+  width: 14px;
+  height: 14px;
+  background: var(--primary);
+  border: 3px solid var(--light-bg);
+  border-radius: 50%;
+  z-index: 2;
+}
+
+.timeline-item:nth-child(odd) .timeline-dot {
+  right: -7px;
+}
+
+.timeline-item:nth-child(even) .timeline-dot {
+  left: -7px;
+}
+
+.timeline-year {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--primary);
+  margin-bottom: 0.3rem;
+}
+
+.timeline-text {
+  font-size: 0.95rem;
+  opacity: 0.75;
+  line-height: 1.6;
+}
+
+.timeline-item.highlight .timeline-dot {
+  width: 18px;
+  height: 18px;
+  background: var(--secondary);
+  box-shadow: 0 0 20px rgba(255, 107, 157, 0.5);
+}
+
+.timeline-item:nth-child(odd).highlight .timeline-dot { right: -9px; }
+.timeline-item:nth-child(even).highlight .timeline-dot { left: -9px; }
+
+.timeline-item.highlight .timeline-year {
+  font-size: 1.8rem;
+  color: var(--secondary);
+}
+
+.timeline-item.highlight .timeline-text {
+  font-weight: 700;
+  opacity: 1;
+}
+
+/* ============ STATS ============ */
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 2rem;
+}
+
+.stat-card {
+  background: var(--glass-card-bg);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid var(--glass-card-border);
+  border-radius: 20px;
+  padding: 2rem;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.stat-card:hover {
+  transform: translateY(-4px) scale(1.02);
+  box-shadow: 0 16px 48px rgba(255, 107, 157, 0.15);
+}
+
+.stat-number {
+  font-family: 'Playfair Display', serif;
+  font-size: 2.8rem;
+  font-weight: 900;
+  background: var(--gradient);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  margin-bottom: 0.3rem;
+  line-height: 1.2;
+}
+
+.stat-label {
+  font-size: 0.9rem;
+  font-weight: 500;
+  opacity: 0.7;
+  margin-bottom: 1rem;
+}
+
+.stat-bar-container {
+  width: 100%;
+  height: 8px;
+  background: rgba(255, 107, 157, 0.1);
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.stat-bar {
+  height: 100%;
+  background: var(--gradient);
+  border-radius: 4px;
+  width: 0%;
+  transition: width 1.5s ease;
+}
+
+.stat-bar.animated {
+  width: var(--bar-width);
+}
+
+/* Circular progress for cost reduction */
+.stat-circle {
+  width: 100px;
+  height: 100px;
+  margin: 0 auto 1rem;
+  position: relative;
+}
+
+.stat-circle svg {
+  width: 100%;
+  height: 100%;
+  transform: rotate(-90deg);
+}
+
+.stat-circle .bg {
+  fill: none;
+  stroke: rgba(255, 107, 157, 0.1);
+  stroke-width: 6;
+}
+
+.stat-circle .progress {
+  fill: none;
+  stroke: url(#circleGrad);
+  stroke-width: 6;
+  stroke-linecap: round;
+  stroke-dasharray: 283;
+  stroke-dashoffset: 283;
+  transition: stroke-dashoffset 2s ease;
+}
+
+.stat-circle.animated .progress {
+  stroke-dashoffset: var(--circle-offset);
+}
+
+.stat-circle-label {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-weight: 900;
+  font-size: 1.1rem;
+  color: var(--primary);
+}
+
+/* ============ ACTION FRAMEWORK ============ */
+.action-section {
+  background: var(--section-alt-bg);
+  transition: background 0.4s ease;
+}
+
+.action-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 1.5rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.action-card {
+  display: flex;
+  align-items: flex-start;
+  gap: 1.2rem;
+  background: var(--action-card-bg);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border: 1px solid var(--glass-card-border);
+  border-radius: 16px;
+  padding: 1.8rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.action-card:hover {
+  transform: translateX(8px);
+  box-shadow: 0 8px 32px rgba(255, 107, 157, 0.12);
+}
+
+.action-step {
+  flex-shrink: 0;
+  width: 48px;
+  height: 48px;
+  background: var(--gradient);
+  border-radius: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.3rem;
+  color: white;
+  font-weight: 700;
+}
+
+.action-content h3 {
+  font-size: 1.05rem;
+  font-weight: 700;
+  margin-bottom: 0.4rem;
+  color: var(--text-dark);
+}
+
+.action-content p {
+  font-size: 0.9rem;
+  opacity: 0.65;
+  line-height: 1.6;
+}
+
+/* ============ CHECKLIST ============ */
+.checklist-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1rem;
+}
+
+.check-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  background: var(--checkbox-bg);
+  border: 1px solid var(--glass-card-border);
+  border-radius: 14px;
+  padding: 1.2rem 1.5rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  user-select: none;
+}
+
+.check-item:hover {
+  border-color: var(--primary);
+  transform: translateX(4px);
+}
+
+.check-item.checked {
+  border-color: var(--primary);
+  background: rgba(255, 107, 157, 0.05);
+}
+
+.check-box {
+  flex-shrink: 0;
+  width: 24px;
+  height: 24px;
+  border: 2px solid var(--accent);
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+  margin-top: 2px;
+}
+
+.check-item.checked .check-box {
+  background: var(--gradient);
+  border-color: var(--primary);
+}
+
+.check-box svg {
+  width: 14px;
+  height: 14px;
+  stroke: white;
+  stroke-width: 3;
+  fill: none;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.check-item.checked .check-box svg {
+  opacity: 1;
+}
+
+.check-text {
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+.check-text strong {
+  color: var(--text-dark);
+}
+
+.check-text span {
+  display: block;
+  font-size: 0.85rem;
+  opacity: 0.55;
+  margin-top: 0.2rem;
+}
+
+/* ============ QUOTE WALL ============ */
+.quote-section {
+  background: var(--dark-plum);
+  transition: background 0.4s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+[data-theme="dark"] .quote-section {
+  background: #0a0510;
+}
+
+.quote-section .section-title,
+.quote-section .section-desc {
+  color: var(--text-light);
+}
+
+.quote-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.quote-card {
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 16px;
+  padding: 2rem;
+  position: relative;
+  transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+.quote-card:hover {
+  transform: translateY(-4px);
+  border-color: rgba(255, 107, 157, 0.3);
+}
+
+.quote-mark {
+  font-family: 'Playfair Display', serif;
+  font-size: 3rem;
+  color: var(--primary);
+  line-height: 1;
+  opacity: 0.5;
+  margin-bottom: 0.5rem;
+}
+
+.quote-text {
+  font-size: 1.05rem;
+  line-height: 1.7;
+  color: var(--text-light);
+  font-weight: 400;
+  opacity: 0.9;
+}
+
+/* ============ FOOTER ============ */
+.footer {
+  background: var(--footer-bg);
+  padding: 3rem 1.5rem;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  transition: background 0.4s ease;
+}
+
+.footer-petals {
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.footer-petal {
+  width: 8px;
+  height: 8px;
+  background: var(--primary);
+  border-radius: 50% 0 50% 50%;
+  opacity: 0.5;
+}
+
+.footer-petal:nth-child(2) { opacity: 0.7; transform: rotate(72deg); }
+.footer-petal:nth-child(3) { opacity: 0.9; transform: rotate(144deg); }
+.footer-petal:nth-child(4) { opacity: 0.7; transform: rotate(216deg); }
+.footer-petal:nth-child(5) { opacity: 0.5; transform: rotate(288deg); }
+
+.footer p {
+  color: var(--text-light);
+  font-size: 0.85rem;
+  opacity: 0.5;
+  margin-bottom: 0.3rem;
+}
+
+.footer p:first-of-type {
+  opacity: 0.8;
+  font-weight: 500;
+}
+
+/* ============ RESPONSIVE ============ */
+@media (max-width: 900px) {
+  .core-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .bento-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .bento-large, .bento-medium {
+    grid-column: span 1;
+  }
+
+  .timeline::before {
+    left: 20px;
+  }
+
+  .timeline-item,
+  .timeline-item:nth-child(odd),
+  .timeline-item:nth-child(even) {
+    left: 0;
+    width: 100%;
+    padding-left: 50px;
+    padding-right: 1rem;
+    text-align: left;
+  }
+
+  .timeline-item:nth-child(odd) .timeline-dot,
+  .timeline-item:nth-child(even) .timeline-dot {
+    left: 13px;
+    right: auto;
+  }
+
+  .timeline-item:nth-child(odd).highlight .timeline-dot,
+  .timeline-item:nth-child(even).highlight .timeline-dot {
+    left: 11px;
+    right: auto;
+  }
+
+  .nav-links a:not(:last-child) { display: none; }
+
+  .action-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 600px) {
+  .section, .section-full {
+    padding: 3rem 1rem;
+  }
+
+  .hero-content { padding: 1rem; }
+
+  .stats-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .checklist-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .quote-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* ============ PRINT ============ */
+@media print {
+  .petals-container,
+  .scroll-progress,
+  .nav,
+  .scroll-indicator,
+  .theme-toggle { display: none !important; }
+
+  body { background: white !important; color: #333 !important; }
+
+  .hero { min-height: auto; padding: 2rem 0; }
+
+  .hero-title {
+    -webkit-text-fill-color: #C44569;
+    font-size: 2.5rem;
+  }
+
+  .section, .section-full { padding: 1.5rem 0; }
+
+  .bento-card, .stat-card, .core-card, .action-card, .check-item, .quote-card {
+    backdrop-filter: none;
+    border: 1px solid #ddd;
+    break-inside: avoid;
+  }
+
+  .quote-section { background: #f5f5f5 !important; }
+  .quote-section .section-title, .quote-section .section-desc,
+  .quote-text { color: #333 !important; }
+
+  .reveal { opacity: 1 !important; transform: none !important; }
+}
+</style>
+</head>
+<body>
+
+<!-- Scroll Progress -->
+<div class="scroll-progress" id="scrollProgress"></div>
+
+<!-- Cherry Blossom Petals -->
+<div class="petals-container" aria-hidden="true">
+  <div class="petal"></div><div class="petal"></div><div class="petal"></div>
+  <div class="petal"></div><div class="petal"></div><div class="petal"></div>
+  <div class="petal"></div><div class="petal"></div><div class="petal"></div>
+  <div class="petal"></div><div class="petal"></div><div class="petal"></div>
+</div>
+
+<!-- Navigation -->
+<nav class="nav" id="nav">
+  <div class="nav-inner">
+    <div class="nav-logo">억겁의 기회</div>
+    <ul class="nav-links">
+      <li><a href="#core">핵심 메시지</a></li>
+      <li><a href="#insights">인사이트</a></li>
+      <li><a href="#timeline">타임라인</a></li>
+      <li><a href="#stats">임팩트</a></li>
+      <li><a href="#action">실행 전략</a></li>
+      <li><a href="#quotes">명언</a></li>
+      <li>
+        <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
+          <span id="themeIcon">&#9790;</span>
+        </button>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+<!-- ============ HERO ============ -->
+<section class="hero" id="hero">
+  <div class="hero-content">
+    <div class="hero-badge">AVING 김기대 회장 강의 인사이트</div>
+    <h1 class="hero-title">억겁의 기회</h1>
+    <p class="hero-subtitle">AI 시대, CEO가 반드시 알아야 할 생존 전략</p>
+    <p class="hero-meta">
+      AVING 김기대 회장 <span>|</span> 강의 인사이트 정리 <span>|</span> 2026년 4월
+    </p>
+  </div>
+  <a href="#core" class="scroll-indicator" aria-label="Scroll down">
+    <svg viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"></polyline></svg>
+  </a>
+</section>
+
+<!-- ============ CORE MESSAGE ============ -->
+<section class="section-full core-message" id="core">
+  <div class="core-inner section">
+    <h2 class="section-title reveal"><span class="gradient-text">왜 '억겁의 기회'인가?</span></h2>
+    <p class="section-desc reveal reveal-delay-1">
+      김기대 회장은 지금 이 순간을 "1000년, 아니 3000년에 한 번 올 기회"라 말합니다.<br>
+      1923년 이후 가장 큰 패러다임 전환이 일어나고 있는 지금, AI는 단순한 도구가 아니라 비즈니스 그 자체입니다.
+    </p>
+
+    <div class="core-grid">
+      <div class="core-card reveal reveal-delay-1">
+        <div class="core-card-icon">&#127752;</div>
+        <h3>3000년에 한 번의 기회</h3>
+        <p>인류 역사에서 이 정도 규모의 패러다임 전환은 손에 꼽을 만큼 드뭅니다. 지금이 바로 그 순간입니다.</p>
+      </div>
+      <div class="core-card reveal reveal-delay-2">
+        <div class="core-card-icon">&#128640;</div>
+        <h3>1923년 이후 최대 전환</h3>
+        <p>라디오, TV, 인터넷에 이은 가장 거대한 변화. AI가 모든 산업의 기본 인프라가 되고 있습니다.</p>
+      </div>
+      <div class="core-card reveal reveal-delay-3">
+        <div class="core-card-icon">&#128161;</div>
+        <h3>AI는 비즈니스 자체</h3>
+        <p>AI를 도구로 보면 기회를 놓칩니다. AI는 비즈니스의 새로운 정의이자 프레임워크입니다.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ BENTO INSIGHTS ============ -->
+<section class="section" id="insights">
+  <h2 class="section-title reveal"><span class="gradient-text">CEO가 놓쳐서는 안 될 5가지</span></h2>
+  <p class="section-desc reveal reveal-delay-1">강의에서 추출한 핵심 인사이트 다섯 가지를 정리합니다.</p>
+
+  <div class="bento-grid">
+    <!-- Card 1 - LARGE -->
+    <div class="bento-card bento-large reveal reveal-delay-1">
+      <span class="bento-emoji">&#129504;</span>
+      <h3>"변화는 논리가 아닌 개념이다"</h3>
+      <ul>
+        <li>변화의 시대에는 기존 논리로는 새로운 기회를 잡을 수 없다</li>
+        <li>개념을 먼저 이해하고 패러다임을 전환해야 한다</li>
+        <li>체인지(Change)가 아닌 트랜스포메이션(Transformation)의 시대</li>
+      </ul>
+    </div>
+
+    <!-- Card 2 - MEDIUM -->
+    <div class="bento-card bento-medium reveal reveal-delay-2">
+      <span class="bento-emoji">&#127919;</span>
+      <h3>"디지털 B노멀: 선점 &rarr; 주도 &rarr; 지배"</h3>
+      <ul>
+        <li>구글 Gemma 4 출시로 주도의 시대에 진입</li>
+        <li>선점한 자가 주도하고, 주도하는 자가 지배한다</li>
+        <li>지금은 '주도'의 단계 &mdash; 아직 늦지 않았다</li>
+      </ul>
+    </div>
+
+    <!-- Card 3 - MEDIUM -->
+    <div class="bento-card bento-medium reveal reveal-delay-3">
+      <span class="bento-emoji">&#128161;</span>
+      <h3>"CEO에게는 명확한 신념이 필요하다"</h3>
+      <ul>
+        <li>기술은 돈이 해결한다 &mdash; CEO가 가져야 할 것은 '방향'</li>
+        <li>AI 시대의 CEO는 시뮬레이션할 줄 알아야 한다</li>
+        <li>신념 없는 CEO는 조직을 이끌 수 없다</li>
+      </ul>
+    </div>
+
+    <!-- Card 4 - LARGE -->
+    <div class="bento-card bento-large reveal reveal-delay-4">
+      <span class="bento-emoji">&#9889;</span>
+      <h3>"AI의 시대정신: 가장 단순하게, 가장 빨리, 가장 싸게"</h3>
+      <ul>
+        <li>AI는 복잡한 것을 단순하게 만드는 도구</li>
+        <li>속도가 곧 경쟁력 &mdash; 빠르게 실행하는 자가 승리</li>
+        <li>비용 혁신: 1000만원짜리 일을 10만 5천원에 해결</li>
+      </ul>
+    </div>
+
+    <!-- Card 5 - MEDIUM -->
+    <div class="bento-card bento-medium reveal reveal-delay-5">
+      <span class="bento-emoji">&#128279;</span>
+      <h3>"데이터가 곧 비즈니스다"</h3>
+      <ul>
+        <li>자체 데이터를 반드시 확보하라</li>
+        <li>AI 혁명 = 데이터 혁명 &mdash; 신뢰할 수 있는 데이터가 핵심</li>
+        <li>우리만의 체험 데이터를 쌓는 것이 가장 중요하고 가치있다</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- ============ TIMELINE ============ -->
+<section class="section-full timeline-section" id="timeline">
+  <div class="section" style="max-width:1200px;margin:0 auto;">
+    <h2 class="section-title reveal"><span class="gradient-text">AI 패러다임 변화의 흐름</span></h2>
+    <p class="section-desc reveal reveal-delay-1">20년 이상의 흐름 속에서 지금 우리가 어디에 있는지 봅니다.</p>
+
+    <div class="timeline">
+      <div class="timeline-item reveal">
+        <div class="timeline-dot"></div>
+        <div class="timeline-year">1998</div>
+        <div class="timeline-text">인터넷 혁명 시작 (AVING 창업)</div>
+      </div>
+      <div class="timeline-item reveal">
+        <div class="timeline-dot"></div>
+        <div class="timeline-year">2003</div>
+        <div class="timeline-text">글로벌 네트워크 구축, MWC 등 200개국 활동</div>
+      </div>
+      <div class="timeline-item reveal">
+        <div class="timeline-dot"></div>
+        <div class="timeline-year">2008</div>
+        <div class="timeline-text">미국 진출, 글로벌 미디어 확장</div>
+      </div>
+      <div class="timeline-item reveal">
+        <div class="timeline-dot"></div>
+        <div class="timeline-year">2016</div>
+        <div class="timeline-text">NVIDIA 시총 200억 달러 &mdash; GPU 혁명의 시작</div>
+      </div>
+      <div class="timeline-item reveal">
+        <div class="timeline-dot"></div>
+        <div class="timeline-year">2017</div>
+        <div class="timeline-text">트랜스포머 논문 발표 (AI의 빅뱅)</div>
+      </div>
+      <div class="timeline-item reveal">
+        <div class="timeline-dot"></div>
+        <div class="timeline-year">2023</div>
+        <div class="timeline-text">ChatGPT 등장 &mdash; 생성형 AI 시대 개막</div>
+      </div>
+      <div class="timeline-item reveal">
+        <div class="timeline-dot"></div>
+        <div class="timeline-year">2024</div>
+        <div class="timeline-text">AI 에이전트 시대 (선점기)</div>
+      </div>
+      <div class="timeline-item reveal">
+        <div class="timeline-dot"></div>
+        <div class="timeline-year">2025</div>
+        <div class="timeline-text">주도의 시대 진입 (Gemma 4, Claude 등)</div>
+      </div>
+      <div class="timeline-item highlight reveal">
+        <div class="timeline-dot"></div>
+        <div class="timeline-year">2026</div>
+        <div class="timeline-text">억겁의 기회 &mdash; 비즈니스 대전환의 해</div>
+      </div>
+      <div class="timeline-item reveal">
+        <div class="timeline-dot"></div>
+        <div class="timeline-year">2030+</div>
+        <div class="timeline-text">AI 완전 통합 시대</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ STATS ============ -->
+<section class="section" id="stats">
+  <h2 class="section-title reveal"><span class="gradient-text">숫자로 보는 AI 혁명</span></h2>
+  <p class="section-desc reveal reveal-delay-1">데이터가 말해주는 변화의 규모</p>
+
+  <!-- SVG Gradient Definition -->
+  <svg width="0" height="0" style="position:absolute">
+    <defs>
+      <linearGradient id="circleGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+        <stop offset="0%" stop-color="#FF6B9D"/>
+        <stop offset="100%" stop-color="#FF8E53"/>
+      </linearGradient>
+    </defs>
+  </svg>
+
+  <div class="stats-grid">
+    <div class="stat-card reveal reveal-delay-1">
+      <div class="stat-number"><span class="counter" data-target="2500">0</span>x</div>
+      <div class="stat-label">NVIDIA 성장률 (2016&rarr;2025)</div>
+      <div class="stat-bar-container">
+        <div class="stat-bar" style="--bar-width: 95%"></div>
+      </div>
+    </div>
+
+    <div class="stat-card reveal reveal-delay-2">
+      <div class="stat-circle" style="--circle-offset: 2.83">
+        <svg viewBox="0 0 100 100">
+          <circle class="bg" cx="50" cy="50" r="45"/>
+          <circle class="progress" cx="50" cy="50" r="45"/>
+        </svg>
+        <div class="stat-circle-label">99%</div>
+      </div>
+      <div class="stat-label">AI 비용 혁신<br>1000만원 &rarr; 10.5만원</div>
+    </div>
+
+    <div class="stat-card reveal reveal-delay-3">
+      <div class="stat-number">$<span class="counter" data-target="100">0</span>억</div>
+      <div class="stat-label">이머전스 AI 투자 유치</div>
+      <div class="stat-bar-container">
+        <div class="stat-bar" style="--bar-width: 80%"></div>
+      </div>
+    </div>
+
+    <div class="stat-card reveal reveal-delay-4">
+      <div class="stat-number"><span class="counter" data-target="10">0</span>억+</div>
+      <div class="stat-label">GPT 글로벌 사용자 (170개국)</div>
+      <div class="stat-bar-container">
+        <div class="stat-bar" style="--bar-width: 90%"></div>
+      </div>
+    </div>
+
+    <div class="stat-card reveal reveal-delay-5">
+      <div class="stat-number">1/<span class="counter" data-target="100">0</span></div>
+      <div class="stat-label">AI 콘텐츠 제작 비용<br>(전통 방식 대비)</div>
+      <div class="stat-bar-container">
+        <div class="stat-bar" style="--bar-width: 99%"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ ACTION FRAMEWORK ============ -->
+<section class="section-full action-section" id="action">
+  <div class="section" style="max-width:1200px;margin:0 auto;">
+    <h2 class="section-title reveal"><span class="gradient-text">지금 당장 실행할 것</span></h2>
+    <p class="section-desc reveal reveal-delay-1">CEO를 위한 6단계 실행 프레임워크</p>
+
+    <div class="action-grid">
+      <div class="action-card reveal reveal-delay-1">
+        <div class="action-step">1</div>
+        <div class="action-content">
+          <h3>&#128270; 문제를 정의하라</h3>
+          <p>비즈니스의 본질은 문제 해결입니다. 어떤 문제를 풀 것인지 명확히 하세요.</p>
+        </div>
+      </div>
+
+      <div class="action-card reveal reveal-delay-2">
+        <div class="action-step">2</div>
+        <div class="action-content">
+          <h3>&#129302; AI를 시뮬레이션하라</h3>
+          <p>회의 대신 AI와 시뮬레이션하세요. 의사결정의 속도와 질이 달라집니다.</p>
+        </div>
+      </div>
+
+      <div class="action-card reveal reveal-delay-3">
+        <div class="action-step">3</div>
+        <div class="action-content">
+          <h3>&#128202; 데이터를 확보하라</h3>
+          <p>자체 데이터 = 경쟁 우위. 우리만의 데이터 파이프라인을 구축하세요.</p>
+        </div>
+      </div>
+
+      <div class="action-card reveal reveal-delay-4">
+        <div class="action-step">4</div>
+        <div class="action-content">
+          <h3>&#127760; 네트워크를 구축하라</h3>
+          <p>AI 시대의 새로운 연결. 플랫폼 관점에서 네트워크 효과를 설계하세요.</p>
+        </div>
+      </div>
+
+      <div class="action-card reveal reveal-delay-5">
+        <div class="action-step">5</div>
+        <div class="action-content">
+          <h3>&#128640; 가장 빨리, 가장 싸게 실행하라</h3>
+          <p>완벽보다 속도입니다. 빠르게 실행하고 빠르게 학습하세요.</p>
+        </div>
+      </div>
+
+      <div class="action-card reveal">
+        <div class="action-step">6</div>
+        <div class="action-content">
+          <h3>&#128188; 브랜드를 재정의하라</h3>
+          <p>AI 시대의 브랜드 = 신뢰. 데이터와 경험으로 신뢰를 쌓으세요.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CHECKLIST ============ -->
+<section class="section" id="apply">
+  <h2 class="section-title reveal"><span class="gradient-text">나에게 적용할 것들</span></h2>
+  <p class="section-desc reveal reveal-delay-1">하나씩 체크하며 실천해 보세요</p>
+
+  <div class="checklist-grid">
+    <div class="check-item reveal reveal-delay-1" onclick="this.classList.toggle('checked')">
+      <div class="check-box">
+        <svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"></polyline></svg>
+      </div>
+      <div class="check-text">
+        <strong>Perplexity 등 AI 검색으로 전환</strong>
+        <span>기존 검색 습관 바꾸기</span>
+      </div>
+    </div>
+
+    <div class="check-item reveal reveal-delay-2" onclick="this.classList.toggle('checked')">
+      <div class="check-box">
+        <svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"></polyline></svg>
+      </div>
+      <div class="check-text">
+        <strong>자체 데이터 파이프라인 구축</strong>
+        <span>우리만의 데이터 자산 확보</span>
+      </div>
+    </div>
+
+    <div class="check-item reveal reveal-delay-3" onclick="this.classList.toggle('checked')">
+      <div class="check-box">
+        <svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"></polyline></svg>
+      </div>
+      <div class="check-text">
+        <strong>AI 시뮬레이션 습관화</strong>
+        <span>의사결정 전 AI와 먼저 토론</span>
+      </div>
+    </div>
+
+    <div class="check-item reveal reveal-delay-4" onclick="this.classList.toggle('checked')">
+      <div class="check-box">
+        <svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"></polyline></svg>
+      </div>
+      <div class="check-text">
+        <strong>콘텐츠 제작에 AI 도입</strong>
+        <span>비용 1/100 수준으로 절감 가능</span>
+      </div>
+    </div>
+
+    <div class="check-item reveal reveal-delay-5" onclick="this.classList.toggle('checked')">
+      <div class="check-box">
+        <svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"></polyline></svg>
+      </div>
+      <div class="check-text">
+        <strong>네트워크 효과 설계</strong>
+        <span>플랫폼 관점에서 비즈니스 재설계</span>
+      </div>
+    </div>
+
+    <div class="check-item reveal" onclick="this.classList.toggle('checked')">
+      <div class="check-box">
+        <svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"></polyline></svg>
+      </div>
+      <div class="check-text">
+        <strong>CEO 마인드셋 전환</strong>
+        <span>기술이 아닌 방향과 신념에 집중</span>
+      </div>
+    </div>
+
+    <div class="check-item reveal" onclick="this.classList.toggle('checked')">
+      <div class="check-box">
+        <svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"></polyline></svg>
+      </div>
+      <div class="check-text">
+        <strong>YouTube/콘텐츠 AI 최적화</strong>
+        <span>AI가 추천하는 콘텐츠 되기</span>
+      </div>
+    </div>
+
+    <div class="check-item reveal" onclick="this.classList.toggle('checked')">
+      <div class="check-box">
+        <svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"></polyline></svg>
+      </div>
+      <div class="check-text">
+        <strong>팀에 AI 리터러시 교육</strong>
+        <span>COO부터 시작</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ QUOTE WALL ============ -->
+<section class="section-full quote-section" id="quotes">
+  <div class="section" style="max-width:1200px;margin:0 auto;">
+    <h2 class="section-title reveal"><span class="gradient-text">기억해야 할 문장들</span></h2>
+    <p class="section-desc reveal reveal-delay-1" style="opacity:0.5">강의에서 가장 울림이 컸던 말들</p>
+
+    <div class="quote-grid">
+      <div class="quote-card reveal reveal-delay-1">
+        <div class="quote-mark">&ldquo;</div>
+        <div class="quote-text">1000년에 한 번, 아니 3000년에 한 번 올 기회입니다</div>
+      </div>
+
+      <div class="quote-card reveal reveal-delay-2">
+        <div class="quote-mark">&ldquo;</div>
+        <div class="quote-text">변화가 올 때는 논리가 아닌 개념이다</div>
+      </div>
+
+      <div class="quote-card reveal reveal-delay-3">
+        <div class="quote-mark">&ldquo;</div>
+        <div class="quote-text">CEO에게 가장 필요한 건 명확한 신념이다</div>
+      </div>
+
+      <div class="quote-card reveal reveal-delay-4">
+        <div class="quote-mark">&ldquo;</div>
+        <div class="quote-text">가장 단순하게, 가장 빨리, 가장 싸게 &mdash; 이것이 AI의 시대정신이다</div>
+      </div>
+
+      <div class="quote-card reveal reveal-delay-5">
+        <div class="quote-mark">&ldquo;</div>
+        <div class="quote-text">AI는 우리 비즈니스의 도구가 아니라 비즈니스 자체입니다</div>
+      </div>
+
+      <div class="quote-card reveal">
+        <div class="quote-mark">&ldquo;</div>
+        <div class="quote-text">기술은 돈이 다 싸게 해결할 것이다</div>
+      </div>
+
+      <div class="quote-card reveal">
+        <div class="quote-mark">&ldquo;</div>
+        <div class="quote-text">문제를 해결하는 것이 비즈니스다</div>
+      </div>
+
+      <div class="quote-card reveal">
+        <div class="quote-mark">&ldquo;</div>
+        <div class="quote-text">데이터가 곧 비즈니스다 &mdash; 반드시 자체 데이터를 확보하라</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FOOTER ============ -->
+<footer class="footer">
+  <div class="footer-petals">
+    <div class="footer-petal"></div>
+    <div class="footer-petal"></div>
+    <div class="footer-petal"></div>
+    <div class="footer-petal"></div>
+    <div class="footer-petal"></div>
+  </div>
+  <p>Insight Summary by 김덕진 | IT커뮤니케이션연구소</p>
+  <p>Based on AVING 김기대 회장 강의 (2026.04)</p>
+  <p style="margin-top:1rem;opacity:0.3;font-size:0.75rem;">&copy; 2026 All rights reserved.</p>
+</footer>
+
+<!-- ============ JAVASCRIPT ============ -->
+<script>
+(function() {
+  'use strict';
+
+  // ---- Scroll Progress ----
+  const progressBar = document.getElementById('scrollProgress');
+
+  function updateProgress() {
+    const scrollTop = window.scrollY;
+    const docHeight = document.documentElement.scrollHeight - window.innerHeight;
+    const progress = docHeight > 0 ? (scrollTop / docHeight) * 100 : 0;
+    progressBar.style.width = progress + '%';
+  }
+
+  // ---- Nav visibility ----
+  const nav = document.getElementById('nav');
+  let lastScroll = 0;
+
+  function updateNav() {
+    const scrollTop = window.scrollY;
+    if (scrollTop > 300) {
+      nav.classList.add('visible');
+    } else {
+      nav.classList.remove('visible');
+    }
+    lastScroll = scrollTop;
+  }
+
+  // ---- Scroll handler (throttled) ----
+  let ticking = false;
+  window.addEventListener('scroll', function() {
+    if (!ticking) {
+      requestAnimationFrame(function() {
+        updateProgress();
+        updateNav();
+        ticking = false;
+      });
+      ticking = true;
+    }
+  });
+
+  // ---- IntersectionObserver for reveals ----
+  const revealElements = document.querySelectorAll('.reveal');
+
+  const revealObserver = new IntersectionObserver(function(entries) {
+    entries.forEach(function(entry) {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('active');
+      }
+    });
+  }, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
+
+  revealElements.forEach(function(el) {
+    revealObserver.observe(el);
+  });
+
+  // ---- Counter animation ----
+  const counters = document.querySelectorAll('.counter');
+
+  const counterObserver = new IntersectionObserver(function(entries) {
+    entries.forEach(function(entry) {
+      if (entry.isIntersecting && !entry.target.dataset.animated) {
+        entry.target.dataset.animated = 'true';
+        animateCounter(entry.target);
+      }
+    });
+  }, { threshold: 0.5 });
+
+  counters.forEach(function(el) { counterObserver.observe(el); });
+
+  function animateCounter(el) {
+    const target = parseInt(el.dataset.target);
+    const duration = 2000;
+    const start = performance.now();
+
+    function update(now) {
+      const elapsed = now - start;
+      const progress = Math.min(elapsed / duration, 1);
+      const eased = 1 - Math.pow(1 - progress, 3);
+      el.textContent = Math.floor(eased * target).toLocaleString();
+      if (progress < 1) requestAnimationFrame(update);
+      else el.textContent = target.toLocaleString();
+    }
+    requestAnimationFrame(update);
+  }
+
+  // ---- Stat bars animation ----
+  const statBars = document.querySelectorAll('.stat-bar');
+
+  const barObserver = new IntersectionObserver(function(entries) {
+    entries.forEach(function(entry) {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('animated');
+      }
+    });
+  }, { threshold: 0.3 });
+
+  statBars.forEach(function(el) { barObserver.observe(el); });
+
+  // ---- Circular progress animation ----
+  const statCircles = document.querySelectorAll('.stat-circle');
+
+  const circleObserver = new IntersectionObserver(function(entries) {
+    entries.forEach(function(entry) {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('animated');
+      }
+    });
+  }, { threshold: 0.5 });
+
+  statCircles.forEach(function(el) { circleObserver.observe(el); });
+
+  // ---- Dark mode toggle ----
+  const themeToggle = document.getElementById('themeToggle');
+  const themeIcon = document.getElementById('themeIcon');
+  const html = document.documentElement;
+
+  // Check saved preference
+  const savedTheme = localStorage.getItem('theme');
+  if (savedTheme === 'dark') {
+    html.setAttribute('data-theme', 'dark');
+    themeIcon.innerHTML = '&#9728;';
+  }
+
+  themeToggle.addEventListener('click', function() {
+    const isDark = html.getAttribute('data-theme') === 'dark';
+    if (isDark) {
+      html.setAttribute('data-theme', 'light');
+      themeIcon.innerHTML = '&#9790;';
+      localStorage.setItem('theme', 'light');
+    } else {
+      html.setAttribute('data-theme', 'dark');
+      themeIcon.innerHTML = '&#9728;';
+      localStorage.setItem('theme', 'dark');
+    }
+  });
+
+  // ---- Smooth anchor scroll ----
+  document.querySelectorAll('a[href^="#"]').forEach(function(anchor) {
+    anchor.addEventListener('click', function(e) {
+      e.preventDefault();
+      var target = document.querySelector(this.getAttribute('href'));
+      if (target) {
+        target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      }
+    });
+  });
+
+})();
+</script>
+</body>
+</html>
